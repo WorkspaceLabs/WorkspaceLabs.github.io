@@ -1,0 +1,40 @@
+.sticky-container {
+    position: relative;  
+    width: 206px;
+    height: 750px;
+    overflow: auto; 
+    scroll-behavior: smooth;    
+}
+
+.sticky-container > h3 {
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 26px;
+    background: #fff;
+    cursor: default;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+}
+
+.sticky-container.disable > h3 {
+    position: static;
+}
+
+.sticky-container > p { 
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 26px;
+    cursor: default;
+    padding-left: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
